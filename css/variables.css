@@ -1,0 +1,60 @@
+:root {
+    /* Colors */
+    --color-primary-navy: #1C3664;
+    --color-primary-navy_dark: #152849;
+    --color-primary-navy_light: #2A4A80;
+    --color-primary-navy_10: #1C366410;
+    --color-primary-navy_20: #1C366420;
+    --color-secondary-green: #3A7D2E;
+    --color-secondary-green_dark: #2C6022;
+    --color-secondary-green_light: #4A9B3C;
+    --color-secondary-green_10: #3A7D2E10;
+    --color-secondary-green_20: #3A7D2E20;
+    --color-neutral-white: #FFFFFF;
+    --color-neutral-off_white: #F8F9FC;
+    --color-neutral-light_gray: #F2F4F8;
+    --color-neutral-mid_gray: #E0E5EE;
+    --color-neutral-border: #D0D7E8;
+    --color-neutral-text_muted: #6B7A99;
+    --color-neutral-text_body: #2C3650;
+    --color-neutral-text_dark: #121C35;
+    --color-accent-gold: #C8972A;
+    --color-accent-gold_light: #F5E6C0;
+    --color-accent-success: #2E7D32;
+    --color-accent-warning: #C67C00;
+    --color-accent-error: #B71C1C;
+    --color-overlay-navy_60: rgba(28, 54, 100, 0.60);
+    --color-overlay-navy_75: rgba(28, 54, 100, 0.75);
+    --color-overlay-navy_85: rgba(28, 54, 100, 0.85);
+    --color-overlay-dark_60: rgba(18, 28, 53, 0.60);
+
+    /* Typography */
+
+    /* Spacing */
+    --spacing-section_y: 5rem;
+    --spacing-section_y_lg: 7rem;
+    --spacing-container_max: 1200px;
+    --spacing-container_px: 1.5rem;
+    --spacing-container_px_lg: 2rem;
+    --spacing-card_padding: 2rem;
+    --spacing-card_gap: 1.5rem;
+    --spacing-nav_height: 72px;
+
+    /* Border Radius */
+
+    /* Shadows */
+    --shadow-card: 0 2px 12px rgba(28, 54, 100, 0.08);
+    --shadow-card_hover: 0 8px 32px rgba(28, 54, 100, 0.15);
+    --shadow-nav: 0 2px 16px rgba(28, 54, 100, 0.12);
+    --shadow-hero: 0 4px 24px rgba(18, 28, 53, 0.25);
+    --shadow-btn: 0 4px 14px rgba(58, 125, 46, 0.35);
+}
+
+/* Auto-generated Utility Classes */
+.bg-primary { background-color: var(--color-primary); }
+.bg-primary-light { background-color: var(--color-primary-light); }
+.bg-secondary { background-color: var(--color-secondary); }
+.text-primary { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+.text-accent { color: var(--color-accent); }
+
