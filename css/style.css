@@ -499,9 +499,6 @@ a {
         .stats-container {
             grid-template-columns: 1fr;
         }
-        .logo-subtitle {
-            display: none;
-        }
     }
 
     /* Utilities */
