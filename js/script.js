@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Hero Carousel
     const slides = document.querySelectorAll('.carousel-slide');
-    const indicators = document.querySelectorAll('.indicator');
     const prevBtn = document.querySelector('.carousel-control.prev');
     const nextBtn = document.querySelector('.carousel-control.next');
     let currentSlide = 0;
@@ -54,12 +53,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function goToSlide(index) {
         slides[currentSlide].classList.remove('active');
-        indicators[currentSlide].classList.remove('active');
         
         currentSlide = (index + slides.length) % slides.length;
         
         slides[currentSlide].classList.add('active');
-        indicators[currentSlide].classList.add('active');
     }
 
     function nextSlide() {
@@ -88,13 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
         prevBtn.addEventListener('click', () => {
             prevSlide();
             resetSlideShow();
-        });
-
-        indicators.forEach((indicator, index) => {
-            indicator.addEventListener('click', () => {
-                goToSlide(index);
-                resetSlideShow();
-            });
         });
 
         startSlideShow();

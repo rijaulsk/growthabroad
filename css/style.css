@@ -8,6 +8,7 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    scroll-padding-top: 100px;
 }
 
 body {
@@ -154,6 +155,25 @@ a {
 
 /* Responsive */
 @media (max-width: 992px) {
+    .nav-container {
+        position: relative;
+        justify-content: center;
+    }
+    
+    .logo-link {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo-subtitle {
+        font-size: 0.65rem;
+        white-space: normal;
+        margin-top: 6px;
+        max-width: 280px;
+        line-height: 1.3;
+    }
+
     .nav-links {
         position: absolute;
         top: 100%;
@@ -172,6 +192,9 @@ a {
 
     .mobile-menu-btn {
         display: block;
+        position: absolute;
+        right: 15px;
+        top: 20px;
     }
 }
 
@@ -798,6 +821,7 @@ a {
         justify-content: center;
         color: var(--color-accent, #2E8B57);
         font-size: 20px;
+        flex-shrink: 0;
         box-shadow: var(--shadow-sm, 0 2px 4px rgba(0,0,0,0.05));
     }
 
