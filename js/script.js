@@ -90,35 +90,5 @@ document.addEventListener('DOMContentLoaded', () => {
         startSlideShow();
     }
 
-    // Stats Counter Animation
-    const statsSection = document.getElementById('stats');
-    const statNumbers = document.querySelectorAll('.stat-number');
-    let hasCounted = false;
-
-    function animateValue(obj, start, end, duration) {
-        let startTimestamp = null;
-        const step = (timestamp) => {
-            if (!startTimestamp) startTimestamp = timestamp;
-            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-            obj.innerHTML = Math.floor(progress * (end - start) + start);
-            if (progress < 1) {
-                window.requestAnimationFrame(step);
-            }
-        };
-        window.requestAnimationFrame(step);
-    }
-
-    if (statsSection) {
-        const observer = new IntersectionObserver((entries) => {
-            if (entries[0].isIntersecting && !hasCounted) {
-                hasCounted = true;
-                statNumbers.forEach(stat => {
-                    const target = parseInt(stat.getAttribute('data-target'));
-                    animateValue(stat, 0, target, 2000);
-                });
-            }
-        }, { threshold: 0.5 });
-
-        observer.observe(statsSection);
-    }
+    // Stats Counter logic removed as per client request to show text instead of numbers
 });
