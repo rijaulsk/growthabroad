@@ -1018,3 +1018,21 @@ a {
         gap: 10px;
     }
 }
+/* Twemoji Styles */
+img.emoji {
+    height: 1em;
+    width: 1em;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.1em;
+}
+
+/* Flag Alignment Fix for Testimonials */
+.test-dest {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+.test-dest img.emoji {
+    margin: 0;
+}

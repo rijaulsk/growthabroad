@@ -91,4 +91,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Stats Counter logic removed as per client request to show text instead of numbers
+    // Initialize Twemoji to fix Windows country flags issue
+    if (typeof twemoji !== 'undefined') {
+        twemoji.parse(document.body, {
+            folder: 'svg',
+            ext: '.svg'
+        });
+    }
 });
